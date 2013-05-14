@@ -13,7 +13,7 @@ Ya It has number of features but it does only one thing.
 5. No copyright, hack it.
 6. No more than one page.
 7. No more than two links.
-8. ** One more Feature, it tells you the station code of a station. :)**
+**8. One more Feature, it tells you the station code of a station. ;)**
 
 **Seriously So what's the plan**
 
