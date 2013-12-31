@@ -19,7 +19,7 @@
     </div>
     <div class="cities" >
       <ul class="row">
-        <li ng-repeat="city in cities | filter:query" class="span3 alert alert-info text-center">
+        <li ng-repeat="city in cities | filter:query | limitTo:20" class="span3 alert alert-info text-center">
           {{city.City}} : {{city.StationCode}}
         </li>
       </ul>
