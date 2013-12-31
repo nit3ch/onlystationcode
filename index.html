@@ -12,6 +12,7 @@
 
 </script>
     <script src="js/angular-1.0.6 2/angular.js"></script>
+    <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/custom.js"></script>
     <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
     <link href="csss/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -27,9 +28,9 @@
     <div class="text-center search">
       <input ng-model="query" placeholder="Type Station for Station Code" class="search-box">
     </div>
-    <div class="cities" >
-      <ul class="row">
-        <li ng-repeat="city in cities | filter:query" class="span3 alert alert-info text-center">
+    <div class="cities">
+      <ul class="row" id="cities-list">
+        <li ng-repeat="city in cities | filter:query | limitTo:20" class="city-list span3 alert alert-info text-center">
           {{city.City}} : {{city.StationCode}}
         </li>
       </ul>
